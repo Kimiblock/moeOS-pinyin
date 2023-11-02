@@ -10,12 +10,12 @@ import_tables:
   - others/rime-minecraft-dict/minecraft_pinyin
   - moe
   - moegirl
-  - cn_dicts/8105     # 字表
-  - cn_dicts/base     # 基础词库
-  - cn_dicts/ext      # 扩展词库
-  - cn_dicts/tencent  # 腾讯词向量（大词库，部署时间较长）
+  - others/rime-ice/cn_dicts/8105     # 字表
+  - others/rime-ice/cn_dicts/base     # 基础词库
+  - others/rime-ice/cn_dicts/ext      # 扩展词库
+  - others/rime-ice/cn_dicts/tencent  # 腾讯词向量（大词库，部署时间较长）
   - zhwiki
-  - cn_dicts/others   # 一些杂项
+  - others/rime-ice/cn_dicts/others   # 一些杂项
 
 ...
 
