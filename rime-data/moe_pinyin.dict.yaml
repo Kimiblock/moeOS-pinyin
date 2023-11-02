@@ -5,6 +5,7 @@
 name: moe_pinyin
 version: "2023-11-02"
 sort: by_weight
+vocabulary: others/rime-essay-simp/essay-zh-hans
 
 import_tables:
   - others/rime-minecraft-dict/minecraft_pinyin
