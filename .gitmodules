@@ -1,9 +1,6 @@
 [submodule "rime-data/others/rime-octagram-data"]
 	path = rime-data/others/rime-octagram-data
 	url = https://github.com/lotem/rime-octagram-data.git
-[submodule "rime-data/others/rime-ice"]
-	path = rime-data/others/rime-ice
-	url = https://github.com/iDvel/rime-ice.git
 [submodule "rime-data/others/rime-minecraft-dict"]
 	path = rime-data/others/rime-minecraft-dict
 	url = https://github.com/Kimiblock/rime-minecraft-dict.git
