@@ -97,7 +97,7 @@ translator:
     - xform/([nl])ue/$1ve/       # 显示为 nve lve
 
 melt_eng:
-  dictionary: others/rime-ice/melt_eng
+  dictionary: melt_eng
   enable_sentence: true
   enable_user_dict: true
   initial_quality: 1.1     # 初始权重
