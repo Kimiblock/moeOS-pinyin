@@ -14,7 +14,7 @@ schema:
     - "Kimiblock"
   description: |
     拼音
-    https://github.com/Kimiblock/moeOS.config/tree/master/usr/share/moeOS-Docs/ibus-rime.conf.d
+    https://github.com/Kimiblock/moeOS-pinyin
 
 menu:
   page_size: 6  # 候选词个数
@@ -70,6 +70,7 @@ engine:
   translators:
     - punct_translator
     - script_translator
+    - table_translator@melt_eng
     - lua_translator@unicode              # Unicode
     - lua_translator@number_translator    # 数字、金额大写
   filters:
