@@ -13,9 +13,9 @@ name: moe_melt
 version: "2021.11.29"
 #sort: by_weight
 use_preset_vocabulary: true
-import_tables:
+#import_tables:
 # 英文及中英混输词库
-  - moe_melt_multi
+#  - moe_melt_multi
 ...
 SoC	SoC	100
 AA	AA	100

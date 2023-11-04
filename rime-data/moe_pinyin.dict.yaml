@@ -20,6 +20,7 @@ import_tables:
   - others/rime-ice/en_dicts/en
   - others/rime-ice/en_dicts/en_ext
   - moe_melt
+  - moe_melt_multi
 
 ...
 
