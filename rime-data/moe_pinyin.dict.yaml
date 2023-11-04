@@ -9,6 +9,8 @@ vocabulary: others/rime-essay-simp/essay-zh-hans
 
 import_tables:
   - moe
+  - others/rime-ice/en_dicts/en_ext
+  - others/rime-ice/en_dicts/en
   - melt_mult_language
   - others/rime-minecraft-dict/minecraft_pinyin
   - moegirl
@@ -17,8 +19,6 @@ import_tables:
   - others/rime-ice/cn_dicts/ext      # 扩展词库
   - others/rime-ice/cn_dicts/tencent  # 腾讯词向量（大词库，部署时间较长）
   - zhwiki
-  - others/rime-ice/en_dicts/en_ext
-  - others/rime-ice/en_dicts/en
   - others/rime-ice/en_dicts/cn_en
   - others/rime-ice/cn_dicts/others   # 一些杂项
 

@@ -76,6 +76,8 @@ engine:
     - simplifier@traditionalize           # 简繁切换
     - uniquifier                          # 去重
     - lua_filter@autocap_filter
+    - lua_filter@cn_en_spacer
+
 
 # 主翻译器，拼音
 translator:
