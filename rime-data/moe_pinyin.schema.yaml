@@ -94,6 +94,13 @@ translator:
     - xform/([nl])v/$1v/         # 显示为 nv lv
     - xform/([nl])ue/$1ve/       # 显示为 nve lve
 
+melt_eng:
+  dictionary: moe_melt
+  enable_completion: true
+  enable_sentence: false
+  initial_quality: "0.8"
+  spelling_hints: 9
+
 # 标点符号
 # punctuator 下面有三个子项：
 #   full_shape 全角标点映射
