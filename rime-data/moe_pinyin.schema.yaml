@@ -80,6 +80,7 @@ engine:
 # 主翻译器，拼音
 translator:
   contextual_suggestions: true
+  enable_completion: true
   max_homophones: 7
   max_homographs: 7
   dictionary: moe_pinyin
@@ -92,7 +93,6 @@ translator:
     # - xform/([nl])ue/$1üe/     # 显示为 nüe lüe
     - xform/([nl])v/$1v/         # 显示为 nv lv
     - xform/([nl])ue/$1ve/       # 显示为 nve lve
-
 
 # 标点符号
 # punctuator 下面有三个子项：

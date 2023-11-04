@@ -19,6 +19,7 @@ import_tables:
   - others/rime-ice/cn_dicts/others   # 一些杂项
   - others/rime-ice/en_dicts/en
   - others/rime-ice/en_dicts/en_ext
+  - moe_melt
 
 ...
 
