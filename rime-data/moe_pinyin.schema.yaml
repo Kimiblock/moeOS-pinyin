@@ -6,6 +6,8 @@
 # 方案说明
 schema:
   schema_id: moe_pinyin
+  dependencies:
+    - melt_eng
   name: "拼音 (moeOS)"
   version: "0.3"
   author:
