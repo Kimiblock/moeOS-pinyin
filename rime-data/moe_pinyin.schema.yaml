@@ -98,6 +98,10 @@ translator:
     - xform/([nl])v/$1v/         # 显示为 nv lv
     - xform/([nl])ue/$1ve/       # 显示为 nve lve
 
+melt_eng:
+  dictionary: melt_eng
+  initial_quality: 1.1
+
 # 标点符号
 # punctuator 下面有三个子项：
 #   full_shape 全角标点映射
