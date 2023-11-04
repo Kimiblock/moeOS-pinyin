@@ -69,7 +69,6 @@ engine:
     - punct_translator
     - script_translator
     #- script_translator@moe_pinyin
-    - table_translator@melt_eng
     #- lua_translator@unicode              # Unicode
     - lua_translator@number_translator    # 数字、金额大写
   filters:
@@ -86,22 +85,13 @@ translator:
   dictionary: moe_pinyin
   spelling_hints: 8              # corrector.lua ：为了让错音错字提示的 Lua 同时适配全拼双拼，将拼音显示在 comment 中
   always_show_comments: false
-  initial_quality: 1.2           # 拼音的权重应该比英文大
+  initial_quality: 1.2
   preedit_format:                # preedit_format 影响到输入框的显示和“Shift+回车”上屏的字符
     - xform/([jqxy])v/$1u/       # 显示为 ju qu xu yu
     # - xform/([nl])v/$1ü/       # 显示为 nü lü
     # - xform/([nl])ue/$1üe/     # 显示为 nüe lüe
     - xform/([nl])v/$1v/         # 显示为 nv lv
     - xform/([nl])ue/$1ve/       # 显示为 nve lve
-
-melt_eng:
-  dictionary: melt_eng     # 挂载词库 melt_eng.dict.yaml
-  enable_completion: true
-  enable_sentence: false   # 禁止造句
-  enable_user_dict: false  # 禁用用户词典
-  initial_quality: 1.1     # 初始权重
-  comment_format:          # 自定义提示码
-    - xform/.*//           # 清空提示码
 
 # 标点符号
 # punctuator 下面有三个子项：
