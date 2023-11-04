@@ -68,13 +68,14 @@ engine:
   translators:
     - punct_translator
     - script_translator
-    #- script_translator@moe_pinyin
-    #- lua_translator@unicode              # Unicode
+    - lua_translator@unicode              # Unicode
     - lua_translator@number_translator    # 数字、金额大写
   filters:
+    - lua_filter@corrector
     - simplifier@emoji                    # Emoji
     - simplifier@traditionalize           # 简繁切换
     - uniquifier                          # 去重
+    - lua_filter@autocap_filter
 
 # 主翻译器，拼音
 translator:
