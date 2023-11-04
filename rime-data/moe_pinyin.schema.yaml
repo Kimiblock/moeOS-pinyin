@@ -72,7 +72,7 @@ engine:
     - script_translator@moe_pinyin
     #- lua_translator@unicode              # Unicode
     - lua_translator@number_translator    # 数字、金额大写
-    - "table_translator@melt_eng"
+    - "table_translator@moe_melt"
   filters:
     - simplifier@emoji                    # Emoji
     - simplifier@traditionalize           # 简繁切换
@@ -95,7 +95,7 @@ translator:
     - xform/([nl])v/$1v/         # 显示为 nv lv
     - xform/([nl])ue/$1ve/       # 显示为 nve lve
 
-melt_eng:
+moe_melt:
   dictionary: moe_melt
   enable_completion: true
   enable_sentence: false
