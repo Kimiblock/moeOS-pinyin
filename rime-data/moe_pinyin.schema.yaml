@@ -99,7 +99,7 @@ moe_melt:
   dictionary: moe_melt
   enable_completion: true
   enable_sentence: false
-  initial_quality: "0.8"
+  initial_quality: 1.1
   spelling_hints: 9
 
 # 标点符号
