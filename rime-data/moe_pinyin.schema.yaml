@@ -72,6 +72,7 @@ engine:
     - script_translator@moe_pinyin
     #- lua_translator@unicode              # Unicode
     - lua_translator@number_translator    # 数字、金额大写
+    - "table_translator@melt_eng"
   filters:
     - simplifier@emoji                    # Emoji
     - simplifier@traditionalize           # 简繁切换
