@@ -1,22 +1,23 @@
- 
-# Rime dictionary
-# encoding: utf-8
-#
+# Rime dictionary		
+# encoding: utf-8		
+#		
 # Easy English Nano使用的英文主词典，主要构成为2016考研词汇大纲和六级单词，数据量6K条。
-#	原作version 2017.03.31 by tanzi
+#	原作version 2017.03.31 by tanzi	
 #	修订version by tumuyan
 #	2019.10	把原省略字符的字典，改为全文字典，并进行了一些扩展
 #	2020.08	添加大写单词（放置在词典顶部），并对词条排序
 
----
-name: moe_melt
-version: "2021.11.29"
-#sort: by_weight
-use_preset_vocabulary: true
-#import_tables:
+---	
+name: melt_eng		
+version: "2021.11.29"		
+#sort: by_weight		
+use_preset_vocabulary: true		
+import_tables:
 # 英文及中英混输词库
-#  - moe_melt_multi
-...
+  - melt_mult_language
+# 用户自定义词库
+  - melt_eng_custom
+...	
 SoC	SoC	100
 AA	AA	100
 aptX	aptX	100

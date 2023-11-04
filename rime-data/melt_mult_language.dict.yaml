@@ -7,7 +7,7 @@
 # 遵循公认英文或拼音拼写的原则，不为方便个人习惯而生造编码。
 # 如：α的英文拼写为alpha，“の”在中文中已经在和“的（de）”互换。
 ---
-name: moe_melt_multi
+name: melt_mult_language
 version: "2021.07.11"
 sort: by_weight
 use_preset_vocabulary: false
