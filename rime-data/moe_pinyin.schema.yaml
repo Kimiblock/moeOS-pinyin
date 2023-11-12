@@ -102,6 +102,8 @@ translator:
 melt_eng:
   dictionary: melt_eng
   initial_quality: 1.1
+  comment_format:
+    - xform/.*//
 
 # 标点符号
 # punctuator 下面有三个子项：
