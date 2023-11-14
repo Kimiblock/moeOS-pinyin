@@ -39,6 +39,9 @@ switches:
     states: [ 半角, 全角 ]
     reset: 0
 
+simplifier:
+  option_name: traditionalization
+
 grammar:
   language: others/rime-octagram-data/zh-hans-t-essay-bgw
 
