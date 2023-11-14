@@ -20,7 +20,8 @@ import_tables:
   - others/rime-ice/cn_dicts/tencent  # 腾讯词向量（大词库，部署时间较长）
   - zhwiki
   - others/rime-ice/en_dicts/cn_en
-  - others/rime-ice/cn_dicts/others   # 一些杂项
+  - others/rime-ice/cn_dicts/others
+  - others/project_trans
 
 ...
 
