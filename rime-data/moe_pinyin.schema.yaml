@@ -39,8 +39,8 @@ switches:
     states: [ 半角, 全角 ]
     reset: 0
 
-simplifier:
-  option_name: traditionalization
+#simplifier:
+#  option_name: traditionalization
 
 grammar:
   language: others/rime-octagram-data/zh-hans-t-essay-bgw
@@ -74,15 +74,15 @@ engine:
     - punct_translator
     - script_translator
     - table_translator@melt_eng
-    - lua_translator@unicode              # Unicode
+#    - lua_translator@unicode              # Unicode
     - lua_translator@number_translator    # 数字、金额大写
   filters:
     - lua_filter@corrector
-    - simplifier@emoji                    # Emoji
-    - simplifier@traditionalize           # 简繁切换
-    - uniquifier                          # 去重
+#    - simplifier@emoji                    # Emoji
+#    - simplifier@traditionalize           # 简繁切换
+#    - uniquifier                          # 去重
     - lua_filter@autocap_filter
-    - lua_filter@cn_en_spacer
+#    - lua_filter@cn_en_spacer
 
 
 # 主翻译器，拼音
