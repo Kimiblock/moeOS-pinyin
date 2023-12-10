@@ -10,6 +10,3 @@
 [submodule "rime-data/others/rime-essay-simp"]
 	path = rime-data/others/rime-essay-simp
 	url = https://github.com/rime/rime-essay-simp.git
-[submodule "rime-data/others/rime-emoji"]
-	path = rime-data/others/rime-emoji
-	url = https://github.com/rime/rime-emoji.git
