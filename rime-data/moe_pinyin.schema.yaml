@@ -84,7 +84,7 @@ engine:
     - simplifier@emoji                    # Emoji
 #    - simplifier@traditionalize           # 简繁切换
 #    - uniquifier                          # 去重
-#    - lua_filter@autocap_filter
+    - lua_filter@autocap_filter
 #    - lua_filter@cn_en_spacer
 
 emoji:
