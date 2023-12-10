@@ -3,6 +3,8 @@
 
 # Credits: rime-ice
 
+__include: others/rime-emoji/emoji_suggestion:/patch
+
 # 方案说明
 schema:
   schema_id: moe_pinyin
