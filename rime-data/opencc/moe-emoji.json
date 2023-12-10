@@ -15,6 +15,10 @@
 					{
 						"type": "text",
 						"file": "moe-emoji.txt"
+					},
+					{
+						"type": "text",
+						"file": "moe-others.txt"
 					}
 				]
 			}
