@@ -88,7 +88,7 @@ engine:
 #    - lua_filter@cn_en_spacer
 
 emoji:
-  opencc_config: emoji.json
+  opencc_config: moe-emoji.json
   option_name: emoji
 
 # 主翻译器，拼音
