@@ -3,8 +3,6 @@
 
 # Credits: rime-ice
 
-__include: others/rime-emoji/emoji_suggestion:/patch
-
 # 方案说明
 schema:
   schema_id: moe_pinyin
@@ -40,6 +38,9 @@ switches:
   - name: full_shape
     states: [ 半角, 全角 ]
     reset: 0
+  - name: emoji
+    states: [ 💀, 😄 ]
+    reset: 1
 
 #simplifier:
 #  option_name: traditionalization
@@ -80,12 +81,15 @@ engine:
     - lua_translator@number_translator    # 数字、金额大写
   filters:
     - lua_filter@corrector
-#    - simplifier@emoji                    # Emoji
+    - simplifier@emoji                    # Emoji
 #    - simplifier@traditionalize           # 简繁切换
 #    - uniquifier                          # 去重
-    - lua_filter@autocap_filter
+#    - lua_filter@autocap_filter
 #    - lua_filter@cn_en_spacer
 
+emoji:
+  opencc_config: emoji.json
+  option_name: emoji
 
 # 主翻译器，拼音
 translator:
