@@ -78,7 +78,7 @@ engine:
     - script_translator
     - table_translator@melt_eng
 #    - lua_translator@unicode              # Unicode
-    - lua_translator@number_translator    # 数字、金额大写
+#    - lua_translator@number_translator    # 数字、金额大写
   filters:
     - lua_filter@corrector
     - simplifier@emoji                    # Emoji
