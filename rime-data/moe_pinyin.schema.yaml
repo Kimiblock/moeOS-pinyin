@@ -32,9 +32,9 @@ switches:
   - name: ascii_punct
     states: [ ¥, $ ]
     reset: 1
-  - name: traditionalization
-    states: [ 简, 繁 ]
-    reset: 0
+#  - name: traditionalization
+#    states: [ 简, 繁 ]
+#    reset: 0
   - name: full_shape
     states: [ 半角, 全角 ]
     reset: 0
@@ -52,8 +52,8 @@ ascii_composer:
   good_old_caps_lock: true  # true | false
   switch_key:
     Caps_Lock: noop      # commit_code | commit_text | clear
-    Shift_L: inline_ascii  # commit_code | commit_text | inline_ascii | clear | noop
-    Shift_R: inline_ascii         # commit_code | commit_text | inline_ascii | clear | noop
+    Shift_L: noop  # commit_code | commit_text | inline_ascii | clear | noop
+    Shift_R: noop         # commit_code | commit_text | inline_ascii | clear | noop
     Control_L: noop       # commit_code | commit_text | inline_ascii | clear | noop
     Control_R: noop       # commit_code | commit_text | inline_ascii | clear | noop
 
@@ -77,15 +77,15 @@ engine:
     - punct_translator
     - script_translator
     - table_translator@melt_eng
-#    - lua_translator@unicode              # Unicode
-#    - lua_translator@number_translator    # 数字、金额大写
   filters:
     - lua_filter@corrector
-    - simplifier@emoji                    # Emoji
+#    - simplifier@emoji                    # Emoji
 #    - simplifier@traditionalize           # 简繁切换
-#    - uniquifier                          # 去重
+    - uniquifier                          # 去重
     - lua_filter@autocap_filter
-#    - lua_filter@cn_en_spacer
+    - lua_filter@is_in_user_dict
+
+is_in_user_dict: true
 
 emoji:
   opencc_config: moe-emoji.json

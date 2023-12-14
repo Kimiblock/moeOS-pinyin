@@ -9,27 +9,10 @@
 select_character = require("select_character")
 
 
-
--- translators:
-
--- 日期时间，可在方案中配置触发关键字。
-date_translator = require("date_translator")
-
--- Unicode，U 开头
-unicode = require("unicode")
-
--- 数字、人民币大写，R 开头
-number_translator = require("number_translator")
-
-
-
 -- filters:
 
 -- 错音错字提示
 corrector = require("corrector")
-
--- v 模式 symbols 优先（全拼）
-v_filter = require("v_filter")
 
 -- 自动大写英文词汇
 autocap_filter = require("autocap_filter")
@@ -51,18 +34,6 @@ reduce_english_filter = require("reduce_english_filter")
 --   count: 2
 --   idx: 4
 long_word_filter = require("long_word_filter")
-
--- 中英混输词条自动空格
--- 在 engine/filters 增加 - lua_filter@cn_en_spacer
-cn_en_spacer = require("cn_en_spacer")
-
--- 英文词条上屏自动空格
--- 在 engine/filters 增加 - lua_filter@en_spacer
-en_spacer = require("en_spacer")
-
--- 九宫格，将输入框的数字转为对应的拼音或英文，iRime 用，Hamster 不需要。
--- 在 engine/filters 增加 - lua_filter@t9_preedit
-t9_preedit = require("t9_preedit")
 
 -- 根据是否在用户词典，在 comment 上加上一个星号 *
 -- 在 engine/filters 增加 - lua_filter@is_in_user_dict
