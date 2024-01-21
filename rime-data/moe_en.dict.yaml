@@ -12,15 +12,15 @@ version: "1"
 sort: by_weight
 ...
 
-NVIDIA	nvidia
-DKMS	dkms
+NVIDIA	NVIDIA
+DKMS	DKMS
 pacman	pacman
 paru	paru
 makepkg	makepkg
-KDE	kde
-GNOME	gnome
-Hyprland	hyprland
+KDE	KDE
+GNOME	GNOME
+Hyprland	Hyprland
 mkinitcpio	mkinitcpio
-Nyanpasu	nyanpasu
+Nyanpasu	Nyanpasu
 prime-run	prime-run
-SPDX	spdx
+SPDX	SPDX
