@@ -8,19 +8,19 @@
 
 ---
 name: moe_en
-version: "0.1"
+version: "1"
 sort: by_weight
 ...
 
 NVIDIA	nvidia
-DKMS	DKMS
+DKMS	dkms
 pacman	pacman
 paru	paru
 makepkg	makepkg
-KDE	KDE
-GNOME	GNOME
-Hyprland	Hyprland
+KDE	kde
+GNOME	gnome
+Hyprland	hyprland
 mkinitcpio	mkinitcpio
-Nyanpasu	Nyanpasu
+Nyanpasu	nyanpasu
 prime-run	prime-run
-SPDX	SPDX
+SPDX	spdx

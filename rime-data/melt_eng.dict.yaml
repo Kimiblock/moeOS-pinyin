@@ -6,7 +6,7 @@
 
 ---
 name: melt_eng
-version: "2023-05-09"
+version: "2"
 import_tables:
   - moe_en
   - others/rime-ice/en_dicts/en_ext  # 补充（里面有些许带权重的，且和 en 重复，需要把 en_ext 放在上面）
