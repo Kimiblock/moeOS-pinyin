@@ -8,25 +8,26 @@
 
 ---
 name: moe_en
-version: "1.1"
+version: "1.2"
 sort: by_weight
 ...
 
 # NieR Automata
-NieR	NieR
+NieR	NieR	1000000000
 Automata	Automata
-NieR Automata	NieR	100000
+NieR Automata	NieR	1000000000
 A2	A2
 YoRHa	YoRHa
 YoRHa Unit 9S	YoRHa
 YoRHa Unit 2B	YoRHa
 YoRHa Unit A2	YoRHa
+YoRHa Unit 2E	YoRHa
 Operator 21O	Operator
 Operator 6O	Operator
 Pascal	Pascal
 Flight Unit	Flight
-Pod 153	Pod 153
-Pod 042	Pod 042
+Pod 153	Pod
+Pod 042	Pod
 Devola	Devola
 Popola	Popola
 Eve	Eve
@@ -34,6 +35,7 @@ Adam	Adam
 machine lifeform	machine
 Bunker	Bunker
 Glory to Mankind	Glory
+Square Enix	Square
 
 # Arch Stuff
 NVIDIA	NVIDIA
@@ -48,7 +50,7 @@ mkinitcpio	mkinitcpio
 prime-run	prime-run
 SPDX	SPDX
 AGPL	AGPL
-pacman -Syu	pacman -Syu
+pacman -Syu	pacman
 mirrorlist	mirrorlist
 AUR	AUR
 PKGBUILD	PKGBUILD
@@ -62,12 +64,12 @@ optdepends	optdepends
 sha256sums	sha256sums
 md5sums	md5sums
 sha1sums	sha1sums
-Virt Manager	Virt Manager
+Virt Manager	Virt
 Adwaita	Adwaita
 KVM	KVM
 VirtIO	VirtIO
 SRCINFO	SRCINFO
-Fcitx 5	Fcitx 5
+Fcitx 5	Fcitx
 iBus	iBus
 Arch Linux	Arch
 archlinuxcn	archlinuxcn
@@ -76,22 +78,33 @@ Easy Effects	Easy
 PipeWire	PipeWire
 Helvum	Helvum
 An Anime Game Launcher	An
+An Anime Game Launcher	Genshin
 systemd	systemd
 QEMU	QEMU
 Bluez	Bluez
 StateDirectory	StateDirectory
+Trusted User	Trusted
+Trusted User	TU
+Avahi	Avahi
+CUPS	CUPS
+AirPrint	AirPrint
+IPP	IPP
+XDG	XDG
+XDG Desktop Portal	XDG
+Flatpak	Flatpak
 
 # Matrix
 Matrix	Matrix
-Element Web	Element Web
-Secure Backup	Secure Backup
-cross-signing	cross-signing
-self signing private key	self signing private key
+Element Web	Element
+Element iOS	Element
+Element Android	Element
+Element Desktop	Element
+Secure Backup	Secure
+cross-signing	cross
 Homeserver	Homeserver
-E2E	E2E
-Element X	Element X
-Sliding Sync	Sliding Sync
-Session ID	Session ID
+Element X	Element
+Sliding Sync	Sliding
+Session ID	Session
 Synapse	Synapse
 Dendrite	Dendrite
 Conduit	Conduit
@@ -100,9 +113,26 @@ FluffyChat	FluffyChat
 Cinny	Cinny
 Fractal	Fractal
 OIDC	OIDC
-OIDC native authentication	OIDC native authentication
-Access Token	Access Token
+OIDC native authentication	OIDC
+Access Token	Access
+
+# Blue Archive
+Sensei	Sensei
+Aris	Aris
+Yuuka	Yuuka
+Noa	Noa
 
 # Others
-
 Nyanpasu	Nyanpasu
+NSFW	NSFW
+Off Topic	Offtopic
+OST	OST
+Kdenlive	Kdenlive
+©	Copyright
+Icalingua++	Icalingua
+Xray	Xray
+V2Ray	V2Ray
+Minosoft	Minosoft
+PCSX2	PCSX2
+RPCS3	RPCS3
+G4Music	G4Music

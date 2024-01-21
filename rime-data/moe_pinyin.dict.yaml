@@ -8,7 +8,7 @@ version: "2023-11-02"
 vocabulary: others/rime-essay-simp/essay-zh-hans
 
 import_tables:
-  - moe
+  - moe_cn
   - others/rime-ice/en_dicts/en_ext
   - others/rime-ice/en_dicts/en
   - melt_mult_language
