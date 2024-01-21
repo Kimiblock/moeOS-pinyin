@@ -8,10 +8,32 @@
 
 ---
 name: moe_en
-version: "1"
+version: "1.1"
 sort: by_weight
 ...
 
+# NieR Automata
+NieR	NieR
+Automata	Automata
+NieR Automata	NieR Automata
+A2	A2
+YoRHa	YoRHa
+YoRHa Unit 9S	YoRHa Unit 9S
+YoRHa Unit 2B	YoRHa Unit 2B
+YoRHa Unit A2	YoRHa Unit A2
+Operator 21O	Operator 21O
+Operator 6O	Operator 6O
+Pascal	Pascal
+Flight Unit	Flight Unit
+Pod 153	Pod 153
+Pod 042	Pod 042
+Devola	Devola
+Popola	Popola
+Eve	Eve
+Adam	Adam
+machine lifeform	machine lifeform
+
+# Arch Stuff
 NVIDIA	NVIDIA
 DKMS	DKMS
 pacman	pacman
@@ -21,6 +43,64 @@ KDE	KDE
 GNOME	GNOME
 Hyprland	Hyprland
 mkinitcpio	mkinitcpio
-Nyanpasu	Nyanpasu
 prime-run	prime-run
 SPDX	SPDX
+AGPL	AGPL
+pacman -Syu	pacman -Syu
+mirrorlist	mirrorlist
+AUR	AUR
+PKGBUILD	PKGBUILD
+epoch	epoch
+pkgname	pkgname
+pkgrel	pkgrel
+pkgver	pkgver
+pkgdesc	pkgdesc
+makedepends	makedepends
+optdepends	optdepends
+sha256sums	sha256sums
+md5sums	md5sums
+sha1sums	sha1sums
+Virt Manager	Virt Manager
+Adwaita	Adwaita
+KVM	KVM
+VirtIO	VirtIO
+SRCINFO	SRCINFO
+Fcitx 5	Fcitx 5
+iBus	iBus
+Arch Linux	Arch Linux
+archlinuxcn	archlinuxcn
+Arch Linux CN	Arch Linux CN
+Easy Effects	Easy Effects
+PipeWire	PipeWire
+Helvum	Helvum
+An Anime Game Launcher	An Anime Game Launcher
+systemd	systemd
+QEMU	QEMU
+Bluez	Bluez
+StateDirectory	StateDirectory
+
+# Matrix
+Matrix	Matrix
+Element Web	Element Web
+Secure Backup	Secure Backup
+cross-signing	cross-signing
+self signing private key	self signing private key
+Homeserver	Homeserver
+E2E	E2E
+Element X	Element X
+Sliding Sync	Sliding Sync
+Session ID	Session ID
+Synapse	Synapse
+Dendrite	Dendrite
+Conduit	Conduit
+Nheko	Nheko
+FluffyChat	FluffyChat
+Cinny	Cinny
+Fractal	Fractal
+OIDC	OIDC
+OIDC native authentication	OIDC native authentication
+Access Token	Access Token
+
+# Others
+
+Nyanpasu	Nyanpasu
