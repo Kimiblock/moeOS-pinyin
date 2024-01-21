@@ -1,0 +1,26 @@
+# Rime dictionary
+# encoding: utf-8
+#
+# moeOS Preset Dictionary
+#
+# Created by Kimiblock
+#
+
+---
+name: moe_en
+version: "0.1"
+sort: by_weight
+...
+
+NVIDIA	nvidia
+DKMS	DKMS
+pacman	pacman
+paru	paru
+makepkg	makepkg
+KDE	KDE
+GNOME	GNOME
+Hyprland	Hyprland
+mkinitcpio	mkinitcpio
+Nyanpasu	Nyanpasu
+prime-run	prime-run
+SPDX	SPDX
