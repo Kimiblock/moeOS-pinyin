@@ -110,7 +110,7 @@ translator:
 
 melt_eng:
   dictionary: melt_eng
-  initial_quality: 1.2
+  initial_quality: 1.1
   comment_format:
     - xform/.*//
 
