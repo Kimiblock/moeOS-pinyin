@@ -1,7 +1,7 @@
 -- Rime Lua 扩展 https://github.com/hchunhui/librime-lua
 -- 文档 https://github.com/hchunhui/librime-lua/wiki/Scripting
 
-
+limit_mulchar = require("limit_mulchar")
 
 -- processors:
 
