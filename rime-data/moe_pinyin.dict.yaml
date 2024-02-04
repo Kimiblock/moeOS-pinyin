@@ -10,6 +10,7 @@ vocabulary: others/rime-essay-simp/essay-zh-hans
 import_tables:
   - moe_cn
   - others/rime-minecraft-dict/minecraft_cn
+  - others/rime-minecraft-dict/minecraft_cn_ext
   - melt_mult_language
   - moegirl
   - others/rime-ice/cn_dicts/8105     # 字表
