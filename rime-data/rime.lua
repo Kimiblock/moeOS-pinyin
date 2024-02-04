@@ -8,6 +8,7 @@
 -- 以词定字，可在 default.yaml key_binder 下配置快捷键，默认为左右中括号 [ ]
 select_character = require("select_character")
 
+limit_mulchar = require("limit_mulchar")
 
 -- filters:
 
