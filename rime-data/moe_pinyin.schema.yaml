@@ -78,8 +78,7 @@ engine:
     - script_translator
     - table_translator@melt_eng
   filters:
-    - lua_filter@corrector
-#    - simplifier@emoji                    # Emoji
+    - lua_filter@reduce_english_filter                    # Emoji
 #    - simplifier@traditionalize           # 简繁切换
     - uniquifier                          # 去重
     - lua_filter@autocap_filter
