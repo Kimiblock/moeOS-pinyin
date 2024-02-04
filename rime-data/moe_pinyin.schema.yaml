@@ -9,7 +9,7 @@ schema:
   dependencies:
     - melt_eng
   name: "拼音 (moeOS)"
-  version: "2024-02-04"
+  version: "0.3"
   author:
     - "Kimiblock"
   description: |
@@ -78,20 +78,18 @@ engine:
     - script_translator
     - table_translator@melt_eng
   filters:
-#    - lua_filter@corrector
+    - lua_filter@corrector
 #    - simplifier@emoji                    # Emoji
 #    - simplifier@traditionalize           # 简繁切换
     - uniquifier                          # 去重
     - lua_filter@autocap_filter
     - lua_filter@is_in_user_dict
-    - lua_filter@limit_mulchar
-    - lua_filter@reduce_english_filter
 
 is_in_user_dict: true
 
-#emoji:
-#  opencc_config: moe-emoji.json
-#  option_name: emoji
+emoji:
+  opencc_config: moe-emoji.json
+  option_name: emoji
 
 # 主翻译器，拼音
 translator:
@@ -140,6 +138,10 @@ recognizer:
 
 # 从 default 继承快捷键
 key_binder:
+  # Lua 配置: 以词定字（上屏当前词句的第一个或最后一个字），和中括号翻页有冲突
+  select_first_character:
+  select_last_character:
+
   bindings:
     # Option/Alt + ←/→ 切换光标至下/上一个拼音
     - { when: composing, accept: Alt+Left, send: Shift+Left }
