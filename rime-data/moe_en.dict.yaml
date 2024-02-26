@@ -8,14 +8,14 @@
 
 ---
 name: moe_en
-version: "1.2"
+version: "1.4"
 sort: by_weight
 ...
 
 # NieR Automata
-NieR	NieR	1000000000
+NieR	NieR
 Automata	Automata
-NieR Automata	NieR	1000000000
+NieR: Automata	NieR
 A2	A2
 YoRHa	YoRHa
 YoRHa Unit 9S	YoRHa
@@ -36,16 +36,19 @@ machine lifeform	machine
 Bunker	Bunker
 Glory to Mankind	Glory
 Square Enix	Square
+Everything that lives is designed to end. They are perpetually trapped in a never-ending spiral of life and death. However...life is all about the struggle within this cycle. That is what "we" believe.	NieRquote
 
 # Arch Stuff
 NVIDIA	NVIDIA
 DKMS	DKMS
 pacman	pacman
+pacman hook	pacman
 paru	paru
 makepkg	makepkg
 KDE	KDE
 GNOME	GNOME
 Hyprland	Hyprland
+Cosmic	Cosmic
 mkinitcpio	mkinitcpio
 prime-run	prime-run
 SPDX	SPDX
@@ -66,6 +69,7 @@ md5sums	md5sums
 sha1sums	sha1sums
 Virt Manager	Virt
 Adwaita	Adwaita
+libadwaita	libadwaita
 KVM	KVM
 VirtIO	VirtIO
 SRCINFO	SRCINFO
@@ -77,12 +81,13 @@ Arch Linux CN	Arch
 Easy Effects	Easy
 PipeWire	PipeWire
 Helvum	Helvum
-An Anime Game Launcher	An
 An Anime Game Launcher	Genshin
 systemd	systemd
 QEMU	QEMU
 Bluez	Bluez
 StateDirectory	StateDirectory
+RuntimeDirectory	RuntimeDirectory
+CacheDirectory	CacheDirectory
 Trusted User	Trusted
 Trusted User	TU
 Avahi	Avahi
@@ -91,10 +96,30 @@ AirPrint	AirPrint
 IPP	IPP
 XDG	XDG
 XDG Desktop Portal	XDG
+XDG Desktop Portal	XDP
 Flatpak	Flatpak
+Wayland	Wayland
+XWayland	XWayland
+Tuba	Tuba
+Geary	Geary
+Amberol	Amberol
+Appindicator	Appindicator
+gtkcord4	gtkcord4
+Telegram	Telegram
+Epiphany	Epiphany
+LibreOffice	LibreOffice
+Space Cadet Pinball	Space
+Steam	Steam
+Steam (Native)	Steam
+Steam (Runtime)	Steam
+Maui	Maui
+I/O	IO
+
 
 # Matrix
 Matrix	Matrix
+Mautrix	Mautrix
+Mautrix Telegram	Mautrix
 Element Web	Element
 Element iOS	Element
 Element Android	Element
@@ -115,6 +140,7 @@ Fractal	Fractal
 OIDC	OIDC
 OIDC native authentication	OIDC
 Access Token	Access
+Syncv3	Syncv3
 
 # Blue Archive
 Sensei	Sensei
@@ -128,7 +154,7 @@ NSFW	NSFW
 Off Topic	Offtopic
 OST	OST
 Kdenlive	Kdenlive
-©	Copyright
+©	copyright
 Icalingua++	Icalingua
 Xray	Xray
 V2Ray	V2Ray
