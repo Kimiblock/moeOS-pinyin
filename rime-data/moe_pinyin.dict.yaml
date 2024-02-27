@@ -11,7 +11,7 @@ import_tables:
   - moe_cn
   - others/rime-minecraft-dict/minecraft_cn
   - others/rime-minecraft-dict/minecraft_cn_ext
-  - others/rime-setting/luna_pinyin.sougou
+  - others/rime-setting/luna_pinyin.sogou
   - melt_mult_language
   - moegirl
   - others/rime-ice/cn_dicts/8105     # 字表
