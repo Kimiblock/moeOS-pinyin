@@ -32,9 +32,9 @@ switches:
   - name: ascii_punct
     states: [ ¥, $ ]
     reset: 1
-  - name: traditionalization
-    states: [ 简, 繁 ]
-    reset: 0
+  - name: simplification
+    states: [ 繁, 简 ]
+    reset: 1
   - name: full_shape
     states: [ 半角, 全角 ]
     reset: 0
@@ -42,8 +42,8 @@ switches:
     states: [ 💀, 😄 ]
     reset: 1
 
-simplifier:
-  option_name: traditionalization
+#simplifier:
+#  option_name: simplification
 
 grammar:
   language: others/rime-setting/zh-hans-t-essay-bgw
@@ -60,6 +60,7 @@ ascii_composer:
 # 输入引擎
 engine:
   processors:
+    - ascii_composer
     - recognizer
     - key_binder
     - speller
@@ -76,19 +77,19 @@ engine:
   translators:
     - punct_translator
     - script_translator
-    - table_translator@melt_eng
+    #- table_translator@melt_eng
   filters:
     - lua_filter@limit_mulchar
-    - uniquifier                          # 去重
+    - uniquifier
     - lua_filter@autocap_filter
     - lua_filter@is_in_user_dict
     - simplifier
 
 is_in_user_dict: true
 
-emoji:
-  opencc_config: moe-emoji.json
-  option_name: emoji
+#emoji:
+#  opencc_config: moe-emoji.json
+#  option_name: emoji
 
 # 主翻译器，拼音
 translator:
@@ -126,13 +127,13 @@ melt_eng:
 
 
 # 处理符合特定规则的输入码，如网址、反查
-recognizer:
-  import_preset: default  # 从 default.yaml 继承通用的
-  patterns:  # 再增加方案专有的：
-    punct: "^v([0-9]|10|[A-Za-z]+)$"  # 响应 symbols_v.yaml 的 symbols，用 'v' 替换 '/'
-    reverse_lookup: "^u[a-z]+$"       # 响应两分拼字的反查
-    unicode: "^U[a-f0-9]+"            # 响应 Unicode
-    number: "^R[0-9]+[.]?[0-9]*"      # 响应 number_translator
+#recognizer:
+#  import_preset: default  # 从 default.yaml 继承通用的
+#  patterns:  # 再增加方案专有的：
+#    punct: "^v([0-9]|10|[A-Za-z]+)$"  # 响应 symbols_v.yaml 的 symbols，用 'v' 替换 '/'
+#    reverse_lookup: "^u[a-z]+$"       # 响应两分拼字的反查
+#    unicode: "^U[a-f0-9]+"            # 响应 Unicode
+#    number: "^R[0-9]+[.]?[0-9]*"      # 响应 number_translator
 
 
 # 从 default 继承快捷键
