@@ -32,9 +32,9 @@ switches:
   - name: ascii_punct
     states: [ ¥, $ ]
     reset: 1
-#  - name: traditionalization
-#    states: [ 简, 繁 ]
-#    reset: 0
+  - name: traditionalization
+    states: [ 简, 繁 ]
+    reset: 0
   - name: full_shape
     states: [ 半角, 全角 ]
     reset: 0
@@ -42,8 +42,8 @@ switches:
     states: [ 💀, 😄 ]
     reset: 1
 
-#simplifier:
-#  option_name: traditionalization
+simplifier:
+  option_name: traditionalization
 
 grammar:
   language: others/rime-setting/zh-hans-t-essay-bgw
@@ -82,6 +82,7 @@ engine:
     - uniquifier                          # 去重
     - lua_filter@autocap_filter
     - lua_filter@is_in_user_dict
+    - simplifier
 
 is_in_user_dict: true
 
