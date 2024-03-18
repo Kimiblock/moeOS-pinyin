@@ -59,7 +59,7 @@ speller:
 translator:
   dictionary: melt_eng
   #spelling_hints: 9
-  spelling_hints: 5
+  spelling_hints: 3
 
 key_binder:
   import_preset: default
