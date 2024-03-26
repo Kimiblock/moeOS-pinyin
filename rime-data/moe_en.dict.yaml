@@ -105,6 +105,18 @@ Geary	Geary
 Amberol	Amberol
 Appindicator	Appindicator
 gtkcord4	gtkcord4
+GTK	GTK
+GTK 3	GTK
+GTK 4	GTK
+GStreamer	GStreamer
+VAAPI	VAAPI
+VDPAU	VDPAU
+CGroup	CGroup
+CGProxy	CGProxy
+Qt	Qt
+Qt 5	Qt
+Qt 6	Qt
+
 Telegram	Telegram
 Epiphany	Epiphany
 LibreOffice	LibreOffice
