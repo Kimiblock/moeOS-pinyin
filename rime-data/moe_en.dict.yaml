@@ -36,7 +36,7 @@ machine lifeform	machine
 Bunker	Bunker
 Glory to Mankind	Glory
 Square Enix	Square
-Everything that lives is designed to end. They are perpetually trapped in a never-ending spiral of life and death. However...life is all about the struggle within this cycle. That is what "we" believe.	NieRquote
+Everything that lives is designed to end.	NieRquote
 
 # Arch Stuff
 NVIDIA	NVIDIA
@@ -53,7 +53,7 @@ mkinitcpio	mkinitcpio
 prime-run	prime-run
 SPDX	SPDX
 AGPL	AGPL
-pacman -Syu	pacman
+Syu	Syu
 mirrorlist	mirrorlist
 AUR	AUR
 PKGBUILD	PKGBUILD
@@ -135,7 +135,6 @@ Mautrix Telegram	Mautrix
 Element Web	Element
 Element iOS	Element
 Element Android	Element
-Element Desktop	Element
 Secure Backup	Secure
 cross-signing	cross
 Homeserver	Homeserver
@@ -174,3 +173,4 @@ Minosoft	Minosoft
 PCSX2	PCSX2
 RPCS3	RPCS3
 G4Music	G4Music
+Kraftland	Kraftland
