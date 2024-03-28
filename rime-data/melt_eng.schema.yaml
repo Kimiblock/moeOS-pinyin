@@ -60,6 +60,8 @@ translator:
   dictionary: melt_eng
   #spelling_hints: 9
   spelling_hints: 3
+  max_homophones: 7
+  max_homographs: 7
 
 key_binder:
   import_preset: default
