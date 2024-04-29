@@ -117,6 +117,8 @@ Qt	Qt
 Qt 5	Qt
 Qt 6	Qt
 CJK	CJK
+initramfs	initramfs
+Btrfs	Btrfs
 
 Telegram	Telegram
 Epiphany	Epiphany
@@ -187,3 +189,5 @@ DM	DM
 Display Manager	DM
 Display Manager	Display
 moeOS	moeOS
+text-input-v3	text
+text-input-v3	tiv
