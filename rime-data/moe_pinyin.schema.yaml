@@ -99,7 +99,7 @@ translator:
   max_homographs: 7
   dictionary: moe_pinyin
   #spelling_hints: 8              # corrector.lua ：为了让错音错字提示的 Lua 同时适配全拼双拼，将拼音显示在 comment 中
-  spelling_hints: 5
+  spelling_hints: 3
   always_show_comments: false
   initial_quality: 1.2
   preedit_format:                # preedit_format 影响到输入框的显示和“Shift+回车”上屏的字符
