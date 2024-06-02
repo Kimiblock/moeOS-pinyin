@@ -6,17 +6,17 @@
 -- processors:
 
 -- 以词定字，可在 default.yaml key_binder 下配置快捷键，默认为左右中括号 [ ]
-select_character = require("select_character")
+select_character = require("others.rime-ice.lua.select_character")
 
 limit_mulchar = require("limit_mulchar")
 
 -- filters:
 
 -- 错音错字提示
-corrector = require("corrector")
+corrector = require("others.rime-ice.lua.corrector")
 
 -- 自动大写英文词汇
-autocap_filter = require("autocap_filter")
+autocap_filter = require("others.rime-ice.lua.autocap_filter")
 
 
 
@@ -31,14 +31,14 @@ autocap_filter = require("autocap_filter")
 -- long_word_filter:
 --   count: 2
 --   idx: 4
-long_word_filter = require("long_word_filter")
+long_word_filter = require("others.rime-ice.lua.long_word_filter")
 
 -- 根据是否在用户词典，在 comment 上加上一个星号 *
 -- 在 engine/filters 增加 - lua_filter@is_in_user_dict
 -- 在方案里写配置项：
 -- is_in_user_dict: true     为输入过的内容加星号
 -- is_in_user_dict: flase    为未输入过的内容加星号
-is_in_user_dict = require("is_in_user_dict")
+is_in_user_dict = require("others.rime-ice.lua.is_in_user_dict")
 
 -- 词条隐藏、降频
 -- 在 engine/processors 增加 - lua_processor@cold_word_drop_processor
@@ -46,8 +46,8 @@ is_in_user_dict = require("is_in_user_dict")
 -- 在 key_binder 增加快捷键：
 -- turn_down_cand: "Control+j"  # 匹配当前输入码后隐藏指定的候选字词 或候选词条放到第四候选位置
 -- drop_cand: "Control+d"       # 强制删词, 无视输入的编码
-cold_word_drop_processor = require("cold_word_drop.processor")
-cold_word_drop_filter = require("cold_word_drop.filter")
+cold_word_drop_processor = require("others.rime-ice.lua.cold_word_drop.processor")
+cold_word_drop_filter = require("others.rime-ice.lua.cold_word_drop.filter")
 
 # Force garbage collection
 function force_gc()
