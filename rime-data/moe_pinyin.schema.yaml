@@ -80,17 +80,12 @@ engine:
     - table_translator@melt_eng
   filters:
     - lua_filter@limit_mulchar
-    - lua_filter@long_word_filter
     - uniquifier
     - lua_filter@autocap_filter
     - lua_filter@is_in_user_dict
     - simplifier
 
 is_in_user_dict: true
-
-long_word_filter:
-  count: 2
-  idx: 4
 
 #emoji:
 #  opencc_config: moe-emoji.json
