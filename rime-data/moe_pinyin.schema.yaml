@@ -88,6 +88,10 @@ engine:
 
 is_in_user_dict: true
 
+long_word_filter:
+  count: 2
+  idx: 4
+
 #emoji:
 #  opencc_config: moe-emoji.json
 #  option_name: emoji
