@@ -82,7 +82,7 @@ engine:
     - lua_filter@limit_mulchar
     - uniquifier
     - lua_filter@autocap_filter
-    #- lua_filter@long_word_filter
+    - lua_filter@long_word_filter
     - lua_filter@is_in_user_dict
     - simplifier
 
