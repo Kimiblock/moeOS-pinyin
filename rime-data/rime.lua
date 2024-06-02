@@ -48,3 +48,9 @@ is_in_user_dict = require("is_in_user_dict")
 -- drop_cand: "Control+d"       # 强制删词, 无视输入的编码
 cold_word_drop_processor = require("cold_word_drop.processor")
 cold_word_drop_filter = require("cold_word_drop.filter")
+
+# Force garbage collection
+function force_gc()
+    -- collectgarbage()
+    collectgarbage("step")
+end
