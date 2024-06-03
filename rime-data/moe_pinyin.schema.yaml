@@ -40,7 +40,7 @@ switches:
     reset: 0
   - name: emoji
     states: [ 💀, 😄 ]
-    reset: 1
+    reset: 0
 
 #simplifier:
 #  option_name: simplification
@@ -98,10 +98,11 @@ long_word_filter:
 
 # 主翻译器，拼音
 translator:
+  enable_user_dict: true
   contextual_suggestions: true
   enable_completion: true
   max_homophones: 7
-  max_homographs: 7
+  enable_sentence: true
   dictionary: moe_pinyin
   #spelling_hints: 8              # corrector.lua ：为了让错音错字提示的 Lua 同时适配全拼双拼，将拼音显示在 comment 中
   spelling_hints: 3
@@ -115,6 +116,8 @@ translator:
     - xform/([nl])ue/$1ve/       # 显示为 nve lve
 
 melt_eng:
+  enable_completion: true
+  enable_sentence: false
   dictionary: melt_eng
   initial_quality: 1.1
   comment_format:
@@ -174,8 +177,8 @@ speller:
   algebra:
     ### 模糊音
     # 声母
-    # - derive/^([zcs])h/$1/          # z c s → zh ch sh
-    # - derive/^([zcs])([^h])/$1h$2/  # zh ch sh → z c s
+    - derive/^([zcs])h/$1/          # z c s → zh ch sh
+    - derive/^([zcs])([^h])/$1h$2/  # zh ch sh → z c s
     # - derive/^l/n/  # n → l
     # - derive/^n/l/  # l → n
     # - derive/^f/h/  # …………
@@ -209,8 +212,8 @@ speller:
     # - derive/^hui$/fei/
     # - derive/^hu$/fu/
     # - derive/^fu$/hu/
-    # - derive/^wang$/huang/
-    # - derive/^huang$/wang/
+    - derive/^wang$/huang/
+    - derive/^huang$/wang/
 
     ### 旧时的拼写规则
     - derive/un$/uen/
