@@ -9,7 +9,7 @@ schema:
   dependencies:
     - melt_eng
   name: "拼音 (moeOS)"
-  version: "0.3"
+  version: "3.4"
   author:
     - "Kimiblock"
   description: |
@@ -82,7 +82,7 @@ engine:
     - lua_filter@limit_mulchar
     - uniquifier
     - lua_filter@autocap_filter
-    - lua_filter@long_word_filter
+    - lua_filter@pin_cand_filter
     - lua_filter@is_in_user_dict
     - simplifier
 
