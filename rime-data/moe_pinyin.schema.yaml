@@ -241,43 +241,43 @@ speller:
     - derive/([zcs])h(a|e|i|u|ai|ei|an|en|ou|uo|ua|un|ui|uan|uai|uang|ang|eng|ong)$/h$1$2/  # hzi → zhi
     - derive/([zcs])h([aeiu])$/$1$2h/  # zih → zhi
     # ai
-    - derive/^([wghk])ai$/$1ia/  # wia → wai
+    #- derive/^([wghk])ai$/$1ia/  # wia → wai
     # ia
-    - derive/([qjx])ia$/$1ai/  # qai → qia
+    #- derive/([qjx])ia$/$1ai/  # qai → qia
     # ei
-    - derive/([wtfghkz])ei$/$1ie/
+    #- derive/([wtfghkz])ei$/$1ie/
     # ie
-    - derive/([jqx])ie$/$1ei/
+    #- derive/([jqx])ie$/$1ei/
     # ao
-    - derive/([rtypsdghklzcbnm])ao$/$1oa/
+    #- derive/([rtypsdghklzcbnm])ao$/$1oa/
     # ou
-    - derive/([ypfm])ou$/$1uo/
+    #- derive/([ypfm])ou$/$1uo/
     # uo（无）
     # an
-    - derive/([wrtypsdfghklzcbnm])an$/$1na/
+    #- derive/([wrtypsdfghklzcbnm])an$/$1na/
     # en
-    - derive/([wrpsdfghklzcbnm])en$/$1ne/
+    #- derive/([wrpsdfghklzcbnm])en$/$1ne/
     # ang
-    - derive/([wrtypsdfghklzcbnm])ang$/$1nag/
-    - derive/([wrtypsdfghklzcbnm])ang$/$1agn/
+    #- derive/([wrtypsdfghklzcbnm])ang$/$1nag/
+    #- derive/([wrtypsdfghklzcbnm])ang$/$1agn/
     # eng
-    - derive/([wrtpsdfghklzcbnm])eng$/$1neg/
-    - derive/([wrtpsdfghklzcbnm])eng$/$1egn/
+    #- derive/([wrtpsdfghklzcbnm])eng$/$1neg/
+    #- derive/([wrtpsdfghklzcbnm])eng$/$1egn/
     # ing
-    - derive/([qtypdjlxbnm])ing$/$1nig/
-    - derive/([qtypdjlxbnm])ing$/$1ign/
+    #- derive/([qtypdjlxbnm])ing$/$1nig/
+    #- derive/([qtypdjlxbnm])ing$/$1ign/
     # ong
-    - derive/([rtysdghklzcn])ong$/$1nog/
-    - derive/([rtysdghklzcn])ong$/$1ogn/
+    #- derive/([rtysdghklzcn])ong$/$1nog/
+    #- derive/([rtysdghklzcn])ong$/$1ogn/
     # iao
-    - derive/([qtpdjlxbnm])iao$/$1ioa/
-    - derive/([qtpdjlxbnm])iao$/$1oia/
+    #- derive/([qtpdjlxbnm])iao$/$1ioa/
+    #- derive/([qtpdjlxbnm])iao$/$1oia/
     # ui
     - derive/([rtsghkzc])ui$/$1iu/
     # iu
     - derive/([qjlxnm])iu$/$1ui/
     # ian
-    - derive/([qtpdjlxbnm])ian$/$1ain/
+    #- derive/([qtpdjlxbnm])ian$/$1ain/
     # - derive/([qtpdjlxbnm])ian$/$1ina/ # 和「李娜、蒂娜、缉拿」等常用词有冲突
     # in
     - derive/([qypjlxbnm])in$/$1ni/

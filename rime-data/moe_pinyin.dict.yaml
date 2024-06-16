@@ -16,9 +16,9 @@ import_tables:
   - moegirl
   - others/rime-ice/cn_dicts/8105     # 字表
   - others/rime-ice/cn_dicts/base     # 基础词库
-  #- others/rime-ice/cn_dicts/ext      # 扩展词库
+  - others/rime-ice/cn_dicts/ext      # 扩展词库
   - zhwiki
-  - others/rime-ice/cn_dicts/others
+  #- others/rime-ice/cn_dicts/others
   - others/project_trans
 
 ...
