@@ -19,7 +19,7 @@ import_tables:
   - others/rime-ice/cn_dicts/ext      # 扩展词库
   - zhwiki
   #- others/rime-ice/cn_dicts/others
-  - others/project_trans
+  - others/trans/project_trans
 
 ...
 
