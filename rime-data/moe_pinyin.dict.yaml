@@ -20,6 +20,7 @@ import_tables:
   - zhwiki
   #- others/rime-ice/cn_dicts/others
   - others/trans/project_trans
+  - others/rime-resident-evil/resident-evil/re4-cn
 
 ...
 

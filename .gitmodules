@@ -17,3 +17,6 @@
 [submodule "rime-data/others/trans"]
 	path = rime-data/others/trans
 	url = https://github.com/project-trans/rime-dict
+[submodule "rime-data/others/rime-resident-evil"]
+	path = rime-data/others/rime-resident-evil
+	url = git@github.com:Kimiblock/rime-resident-evil.git
