@@ -9,7 +9,7 @@ schema:
   dependencies:
     - melt_eng
   name: "拼音 (moeOS)"
-  version: "3.5"
+  version: "3.6"
   author:
     - "Kimiblock"
   description: |
@@ -17,7 +17,7 @@ schema:
     https://github.com/Kimiblock/moeOS-pinyin
 
 menu:
-  page_size: 6  # 候选词个数
+  page_size: 7  # 候选词个数
 
 switcher:
   caption: 方案选单
@@ -107,7 +107,7 @@ translator:
   enable_sentence: true
   dictionary: moe_pinyin
   #spelling_hints: 8              # corrector.lua ：为了让错音错字提示的 Lua 同时适配全拼双拼，将拼音显示在 comment 中
-  spelling_hints: 6
+  spelling_hints: 3
   always_show_comments: false
   initial_quality: 1.2
   preedit_format:                # preedit_format 影响到输入框的显示和“Shift+回车”上屏的字符
@@ -174,7 +174,7 @@ key_binder:
 # 拼写设定
 speller:
   # 如果不想让什么标点直接上屏，可以加在 alphabet，或者编辑标点符号为两个及以上的映射
-  alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA-_
+  alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
   initials: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
   delimiter: " '"  # 第一位<空格>是拼音之间的分隔符；第二位<'>表示可以手动输入单引号来分割拼音。
   algebra:
@@ -219,9 +219,9 @@ speller:
     - derive/^huang$/wang/
 
     ### 旧时的拼写规则
-    # - derive/un$/uen/
-    # - derive/ui$/uei/
-    # - derive/iu$/iou/
+    - derive/un$/uen/
+    - derive/ui$/uei/
+    - derive/iu$/iou/
 
     ### 超级简拼
     - erase/^hm$/ # 响应超级简拼，取消「噷 hm」的独占
@@ -241,27 +241,27 @@ speller:
     # 有些规则对全拼简拼混输有副作用：如「x'ai 喜爱」被纠错为「xia 下」
     # zh、ch、sh
     - derive/([zcs])h(a|e|i|u|ai|ei|an|en|ou|uo|ua|un|ui|uan|uai|uang|ang|eng|ong)$/h$1$2/  # hzi → zhi
-    - derive/([zcs])h([aeiu])$/$1$2h/  # zih → zhi
+    # - derive/([zcs])h([aeiu])$/$1$2h/  # zih → zhi
     # ai
-    - derive/^([wghk])ai$/$1ia/  # wia → wai
+    # - derive/^([wghk])ai$/$1ia/  # wia → wai
     # ia
-    - derive/([qjx])ia$/$1ai/  # qai → qia
+    # - derive/([qjx])ia$/$1ai/  # qai → qia
     # ei
-    - derive/([wtfghkz])ei$/$1ie/
+    # - derive/([wtfghkz])ei$/$1ie/
     # ie
-    - derive/([jqx])ie$/$1ei/
+    # - derive/([jqx])ie$/$1ei/
     # ao
-    - derive/([rtypsdghklzcbnm])ao$/$1oa/
+    # - derive/([rtypsdghklzcbnm])ao$/$1oa/
     # ou
-    - derive/([ypfm])ou$/$1uo/
+    # - derive/([ypfm])ou$/$1uo/
     # uo（无）
     # an
-    - derive/([wrtypsdfghklzcbnm])an$/$1na/
+    # - derive/([wrtypsdfghklzcbnm])an$/$1na/
     # en
-    - derive/([wrpsdfghklzcbnm])en$/$1ne/
+    # - derive/([wrpsdfghklzcbnm])en$/$1ne/
     # ang
-    - derive/([wrtypsdfghklzcbnm])ang$/$1nag/
-    - derive/([wrtypsdfghklzcbnm])ang$/$1agn/
+    # - derive/([wrtypsdfghklzcbnm])ang$/$1nag/
+    # - derive/([wrtypsdfghklzcbnm])ang$/$1agn/
     # eng
     - derive/([wrtpsdfghklzcbnm])eng$/$1neg/
     - derive/([wrtpsdfghklzcbnm])eng$/$1egn/
@@ -269,47 +269,47 @@ speller:
     - derive/([qtypdjlxbnm])ing$/$1nig/
     - derive/([qtypdjlxbnm])ing$/$1ign/
     # ong
-    - derive/([rtysdghklzcn])ong$/$1nog/
-    - derive/([rtysdghklzcn])ong$/$1ogn/
+    # - derive/([rtysdghklzcn])ong$/$1nog/
+    # - derive/([rtysdghklzcn])ong$/$1ogn/
     # iao
-    - derive/([qtpdjlxbnm])iao$/$1ioa/
-    - derive/([qtpdjlxbnm])iao$/$1oia/
+    # - derive/([qtpdjlxbnm])iao$/$1ioa/
+    # - derive/([qtpdjlxbnm])iao$/$1oia/
     # ui
-    - derive/([rtsghkzc])ui$/$1iu/
+    # - derive/([rtsghkzc])ui$/$1iu/
     # iu
-    - derive/([qjlxnm])iu$/$1ui/
+    # - derive/([qjlxnm])iu$/$1ui/
     # ian
     - derive/([qtpdjlxbnm])ian$/$1ain/
     # - derive/([qtpdjlxbnm])ian$/$1ina/ # 和「李娜、蒂娜、缉拿」等常用词有冲突
     # in
-    - derive/([qypjlxbnm])in$/$1ni/
+    # - derive/([qypjlxbnm])in$/$1ni/
     # iang
-    - derive/([qjlxn])iang$/$1aing/
-    - derive/([qjlxn])iang$/$1inag/
+    # - derive/([qjlxn])iang$/$1aing/
+    # - derive/([qjlxn])iang$/$1inag/
     # ua
-    - derive/([g|k|h|zh|sh])ua$/$1au/
+    # - derive/([g|k|h|zh|sh])ua$/$1au/
     # uai
-    - derive/([g|h|k|zh|ch|sh])uai$/$1aui/
+    # - derive/([g|h|k|zh|ch|sh])uai$/$1aui/
     # - derive/([g|h|k|zh|ch|sh])uai$/$1uia/ # 和「会啊、追啊」等常用词有冲突
     # uan
     - derive/([qrtysdghjklzxcn])uan$/$1aun/
     # - derive/([qrtysdghjklzxcn])uan$/$1una/ # 和「去哪、露娜」等常用词有冲突
     # un
-    - derive/([qrtysdghjklzxc])un$/$1nu/
+    # - derive/([qrtysdghjklzxc])un$/$1nu/
     # ue
-    - derive/([nlyjqx])ue$/$1eu/
+    # - derive/([nlyjqx])ue$/$1eu/
     # uang
-    - derive/([g|h|k|zh|ch|sh])uang$/$1aung/
-    - derive/([g|h|k|zh|ch|sh])uang$/$1uagn/
-    - derive/([g|h|k|zh|ch|sh])uang$/$1unag/
-    - derive/([g|h|k|zh|ch|sh])uang$/$1augn/
+    # - derive/([g|h|k|zh|ch|sh])uang$/$1aung/
+    # - derive/([g|h|k|zh|ch|sh])uang$/$1uagn/
+    # - derive/([g|h|k|zh|ch|sh])uang$/$1unag/
+    # - derive/([g|h|k|zh|ch|sh])uang$/$1augn/
     # iong
     - derive/([jqx])iong$/$1inog/
     - derive/([jqx])iong$/$1oing/
     - derive/([jqx])iong$/$1iogn/
     - derive/([jqx])iong$/$1oign/
     # 其他
-    - derive/([rtsdghkzc])o(u|ng)$/$1o/ # do → dou|dong
-    - derive/ong$/on/ # lon → long
-    - derive/([tl])eng$/$1en/ # ten → teng
-    - derive/([qwrtypsdfghjklzxcbnm])([aeio])ng$/$1ng/ # lng → lang、leng、ling、long
+    # - derive/([rtsdghkzc])o(u|ng)$/$1o/ # do → dou|dong
+    # - derive/ong$/on/ # lon → long
+    # - derive/([tl])eng$/$1en/ # ten → teng
+    # - derive/([qwrtypsdfghjklzxcbnm])([aeio])ng$/$1ng/ # lng → lang、leng、ling、long
