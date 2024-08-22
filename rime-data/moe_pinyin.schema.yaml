@@ -79,19 +79,19 @@ engine:
     - script_translator
     - table_translator@melt_eng
   filters:
-    - lua_filter@limit_mulchar
+    #- lua_filter@limit_mulchar
     - uniquifier
     - lua_filter@autocap_filter
-    - lua_filter@long_word_filter
+    #- lua_filter@long_word_filter
     #- lua_filter@pin_cand_filter
     - lua_filter@is_in_user_dict
     - simplifier
 
 is_in_user_dict: true
 
-long_word_filter:
-  count: 2
-  idx: 4
+#long_word_filter:
+#  count: 2
+#  idx: 4
 
 #emoji:
 #  opencc_config: moe-emoji.json
@@ -102,6 +102,7 @@ translator:
   enable_user_dict: true
   contextual_suggestions: true
   enable_completion: true
+  enable_correction: true
   max_homophones: 7
   enable_sentence: true
   dictionary: moe_pinyin
@@ -117,6 +118,7 @@ translator:
     - xform/([nl])ue/$1ve/       # 显示为 nve lve
 
 melt_eng:
+  enable_correction: true
   enable_completion: true
   enable_sentence: false
   dictionary: melt_eng
