@@ -8,19 +8,19 @@ version: "2023-11-02"
 vocabulary: others/rime-essay-simp/essay-zh-hans
 
 import_tables:
+  - others/rime-ice/cn_dicts/8105
+  - others/rime-ice/cn_dicts/base
   - moe_cn
   - others/rime-minecraft-dict/minecraft_cn
   - others/rime-minecraft-dict/minecraft_cn_ext
-  #- others/rime-setting/luna_pinyin.sogou
   - melt_mult_language
   - moegirl
-  - others/rime-ice/cn_dicts/8105     # 字表
-  - others/rime-ice/cn_dicts/base     # 基础词库
   - others/rime-ice/cn_dicts/ext      # 扩展词库
   - zhwiki
   #- others/rime-ice/cn_dicts/others
   - others/trans/project_trans
   - others/rime-resident-evil/resident-evil/re4-cn
+  - others/rime-ice/cn_dicts/tencent
 
 ...
 

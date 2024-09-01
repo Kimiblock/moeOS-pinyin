@@ -20,3 +20,6 @@
 [submodule "rime-data/others/rime-resident-evil"]
 	path = rime-data/others/rime-resident-evil
 	url = https://github.com/Kimiblock/rime-resident-evil.git
+[submodule "rime-data/others/octogram"]
+	path = rime-data/others/octogram
+	url = https://github.com/lotem/rime-octagram-data.git

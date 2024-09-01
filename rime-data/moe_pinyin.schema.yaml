@@ -36,6 +36,8 @@ switches:
 #simplifier:
 #  option_name: simplification
 
+vocabulary: others/rime-essay-simp/essay-zh-hans
+
 grammar:
   language: others/rime-setting/zh-hans-t-essay-bgw
 
