@@ -10,10 +10,6 @@
 	path = rime-data/others/rime-essay-simp
 	url = https://github.com/rime/rime-essay-simp.git
 	shallow = true
-[submodule "rime-data/others/rime-setting"]
-	path = rime-data/others/rime-setting
-	url = https://github.com/Iorest/rime-setting
-	shallow = true
 [submodule "rime-data/others/trans"]
 	path = rime-data/others/trans
 	url = https://github.com/project-trans/rime-dict

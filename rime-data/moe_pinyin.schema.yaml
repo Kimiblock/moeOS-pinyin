@@ -39,7 +39,7 @@ switches:
 vocabulary: others/rime-essay-simp/essay-zh-hans
 
 grammar:
-  language: others/rime-setting/zh-hans-t-essay-bgw
+  language: others/rime-octagram-data/zh-hans-t-essay-bgw
 
 ascii_composer:
   good_old_caps_lock: true
