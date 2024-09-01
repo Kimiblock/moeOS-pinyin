@@ -29,17 +29,8 @@ switcher:
 # states: 方案选单显示的名称。可以注释掉，仍可以通过快捷键切换。
 # reset: 默认状态。 注释掉后，切换窗口时不会重置到默认状态。
 switches:
-  - name: ascii_punct
-    states: [ ¥, $ ]
-    reset: 1
-  - name: simplification
-    states: [ 繁, 简 ]
-    reset: 1
   - name: full_shape
     states: [ 半角, 全角 ]
-    reset: 0
-  - name: emoji
-    states: [ 💀, 😄 ]
     reset: 0
 
 #simplifier:
@@ -49,13 +40,13 @@ grammar:
   language: others/rime-setting/zh-hans-t-essay-bgw
 
 ascii_composer:
-  good_old_caps_lock: true  # true | false
+  good_old_caps_lock: true
   switch_key:
-    Caps_Lock: noop      # commit_code | commit_text | clear
-    Shift_L: noop  # commit_code | commit_text | inline_ascii | clear | noop
-    Shift_R: noop         # commit_code | commit_text | inline_ascii | clear | noop
-    Control_L: noop       # commit_code | commit_text | inline_ascii | clear | noop
-    Control_R: noop       # commit_code | commit_text | inline_ascii | clear | noop
+    Caps_Lock: noop
+    Shift_L: noop
+    Shift_R: noop
+    Control_L: noop
+    Control_R: noop
 
 # 输入引擎
 engine:
@@ -82,16 +73,18 @@ engine:
     #- lua_filter@limit_mulchar
     - uniquifier
     - lua_filter@autocap_filter
-    #- lua_filter@long_word_filter
+    - lua_filter@long_word_filter
     #- lua_filter@pin_cand_filter
     - lua_filter@is_in_user_dict
     - simplifier
+    - lua_filter@corrector
+    - lua_translator@force_gc
 
 is_in_user_dict: true
 
-#long_word_filter:
-#  count: 2
-#  idx: 4
+long_word_filter:
+  count: 2
+  idx: 4
 
 #emoji:
 #  opencc_config: moe-emoji.json
@@ -101,13 +94,14 @@ is_in_user_dict: true
 translator:
   enable_user_dict: true
   contextual_suggestions: true
+  enable_encoder: true
   enable_completion: true
   enable_correction: true
   max_homophones: 7
   enable_sentence: true
   dictionary: moe_pinyin
   #spelling_hints: 8              # corrector.lua ：为了让错音错字提示的 Lua 同时适配全拼双拼，将拼音显示在 comment 中
-  spelling_hints: 3
+  spelling_hints: 4
   always_show_comments: false
   initial_quality: 1.2
   preedit_format:                # preedit_format 影响到输入框的显示和“Shift+回车”上屏的字符
@@ -137,6 +131,17 @@ melt_eng:
 #  symbols:
 #    __include: symbols_v:/symbols              # 从 symbols_v.yaml 导入配置
 
+punctuator:
+  half_shape:
+    '，' : ","
+    '。' : "."
+    '？' : "?"
+    '；' : ";"
+  full_shape:
+    '，' : ","
+    '。' : "."
+    '？' : "?"
+    '；' : ";"
 
 # 处理符合特定规则的输入码，如网址、反查
 #recognizer:
@@ -180,8 +185,8 @@ speller:
   algebra:
     ### 模糊音
     # 声母
-    - derive/^([zcs])h/$1/          # z c s → zh ch sh
-    - derive/^([zcs])([^h])/$1h$2/  # zh ch sh → z c s
+    # - derive/^([zcs])h/$1/          # z c s → zh ch sh
+    # - derive/^([zcs])([^h])/$1h$2/  # zh ch sh → z c s
     # - derive/^l/n/  # n → l
     # - derive/^n/l/  # l → n
     # - derive/^f/h/  # …………
@@ -205,7 +210,7 @@ speller:
     # - derive/an$/ai/
     # - derive/ong$/un/
     # - derive/un$/ong/
-    - derive/ong$/on/
+    # - derive/ong$/on/
     # - derive/iong$/un/
     # - derive/un$/iong/
     # - derive/ong$/eng/
@@ -215,13 +220,13 @@ speller:
     # - derive/^hui$/fei/
     # - derive/^hu$/fu/
     # - derive/^fu$/hu/
-    - derive/^wang$/huang/
-    - derive/^huang$/wang/
+    # - derive/^wang$/huang/
+    # - derive/^huang$/wang/
 
     ### 旧时的拼写规则
-    - derive/un$/uen/
-    - derive/ui$/uei/
-    - derive/iu$/iou/
+    # - derive/un$/uen/
+    # - derive/ui$/uei/
+    # - derive/iu$/iou/
 
     ### 超级简拼
     - erase/^hm$/ # 响应超级简拼，取消「噷 hm」的独占
@@ -240,7 +245,7 @@ speller:
     ### 自动纠错
     # 有些规则对全拼简拼混输有副作用：如「x'ai 喜爱」被纠错为「xia 下」
     # zh、ch、sh
-    - derive/([zcs])h(a|e|i|u|ai|ei|an|en|ou|uo|ua|un|ui|uan|uai|uang|ang|eng|ong)$/h$1$2/  # hzi → zhi
+    # - derive/([zcs])h(a|e|i|u|ai|ei|an|en|ou|uo|ua|un|ui|uan|uai|uang|ang|eng|ong)$/h$1$2/  # hzi → zhi
     # - derive/([zcs])h([aeiu])$/$1$2h/  # zih → zhi
     # ai
     # - derive/^([wghk])ai$/$1ia/  # wia → wai
@@ -263,11 +268,11 @@ speller:
     # - derive/([wrtypsdfghklzcbnm])ang$/$1nag/
     # - derive/([wrtypsdfghklzcbnm])ang$/$1agn/
     # eng
-    - derive/([wrtpsdfghklzcbnm])eng$/$1neg/
-    - derive/([wrtpsdfghklzcbnm])eng$/$1egn/
+    # - derive/([wrtpsdfghklzcbnm])eng$/$1neg/
+    # - derive/([wrtpsdfghklzcbnm])eng$/$1egn/
     # ing
-    - derive/([qtypdjlxbnm])ing$/$1nig/
-    - derive/([qtypdjlxbnm])ing$/$1ign/
+    # - derive/([qtypdjlxbnm])ing$/$1nig/
+    # - derive/([qtypdjlxbnm])ing$/$1ign/
     # ong
     # - derive/([rtysdghklzcn])ong$/$1nog/
     # - derive/([rtysdghklzcn])ong$/$1ogn/
@@ -279,7 +284,7 @@ speller:
     # iu
     # - derive/([qjlxnm])iu$/$1ui/
     # ian
-    - derive/([qtpdjlxbnm])ian$/$1ain/
+    # - derive/([qtpdjlxbnm])ian$/$1ain/
     # - derive/([qtpdjlxbnm])ian$/$1ina/ # 和「李娜、蒂娜、缉拿」等常用词有冲突
     # in
     # - derive/([qypjlxbnm])in$/$1ni/
@@ -292,7 +297,7 @@ speller:
     # - derive/([g|h|k|zh|ch|sh])uai$/$1aui/
     # - derive/([g|h|k|zh|ch|sh])uai$/$1uia/ # 和「会啊、追啊」等常用词有冲突
     # uan
-    - derive/([qrtysdghjklzxcn])uan$/$1aun/
+    # - derive/([qrtysdghjklzxcn])uan$/$1aun/
     # - derive/([qrtysdghjklzxcn])uan$/$1una/ # 和「去哪、露娜」等常用词有冲突
     # un
     # - derive/([qrtysdghjklzxc])un$/$1nu/
@@ -304,10 +309,10 @@ speller:
     # - derive/([g|h|k|zh|ch|sh])uang$/$1unag/
     # - derive/([g|h|k|zh|ch|sh])uang$/$1augn/
     # iong
-    - derive/([jqx])iong$/$1inog/
-    - derive/([jqx])iong$/$1oing/
-    - derive/([jqx])iong$/$1iogn/
-    - derive/([jqx])iong$/$1oign/
+    # - derive/([jqx])iong$/$1inog/
+    # - derive/([jqx])iong$/$1oing/
+    # - derive/([jqx])iong$/$1iogn/
+    # - derive/([jqx])iong$/$1oign/
     # 其他
     # - derive/([rtsdghkzc])o(u|ng)$/$1o/ # do → dou|dong
     # - derive/ong$/on/ # lon → long
