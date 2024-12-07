@@ -128,9 +128,9 @@ melt_eng:
 #   full_shape 全角标点映射
 #   half_shape 半角标点映射
 #   symbols    Rime 的预设配置是以 '/' 前缀开头输出一系列字符，自定义的 symbols_v.yaml 修改成了 'v' 开头。
-#punctuator:
-#  half_shape:
-#    __include: default:/punctuator/half_shape  # 从 default.yaml 导入配置
+punctuator:
+ half_shape:
+   __include: punctuation:/half_shape
 #  symbols:
 #    __include: symbols_v:/symbols              # 从 symbols_v.yaml 导入配置
 
