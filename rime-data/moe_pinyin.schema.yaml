@@ -99,7 +99,7 @@ translator:
   contextual_suggestions: true
   enable_encoder: true
   enable_completion: true
-  enable_correction: true
+  enable_correction: false
   max_homophones: 7
   enable_sentence: true
   dictionary: moe_pinyin
