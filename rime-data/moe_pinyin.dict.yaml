@@ -8,7 +8,7 @@ sort: by_weight
 use_preset_vocabulary: false
 
 import_tables:
-  - others/LMDG/cn_dicts/chars
+  - others/wanxiang/wanxiang
   - moe_cn
   - others/rime-minecraft-dict/minecraft_cn
   - others/rime-minecraft-dict/minecraft_cn_ext
@@ -17,12 +17,5 @@ import_tables:
   - zhwiki
   - others/trans/project_trans
   - others/rime-resident-evil/resident-evil/re4-cn
-  - others/LMDG/cn_dicts/base
-  - others/LMDG/cn_dicts/correlation
-  - others/LMDG/cn_dicts/associational
-  - others/LMDG/cn_dicts/corrections
-  - others/LMDG/cn_dicts/compatible
-
-
 ...
 
