@@ -3,24 +3,26 @@
 
 ---
 name: moe_pinyin
-version: "2023-11-02"
+version: "2025-03-30"
 # sort: by_weight
 vocabulary: others/rime-essay-simp/essay-zh-hans
 
 import_tables:
-  - others/rime-ice/cn_dicts/8105
-  - others/rime-ice/cn_dicts/base
+  - others/LMDG/cn_dicts/chars
   - moe_cn
   - others/rime-minecraft-dict/minecraft_cn
   - others/rime-minecraft-dict/minecraft_cn_ext
   - melt_mult_language
   - moegirl
-  - others/rime-ice/cn_dicts/ext      # 扩展词库
   - zhwiki
-  #- others/rime-ice/cn_dicts/others
   - others/trans/project_trans
   - others/rime-resident-evil/resident-evil/re4-cn
-  - others/rime-ice/cn_dicts/tencent
+  - others/LMDG/cn_dicts/base
+  - others/LMDG/cn_dicts/correlation
+  - others/LMDG/cn_dicts/associational
+  - others/LMDG/cn_dicts/corrections
+  - others/LMDG/cn_dicts/compatible
+
 
 ...
 
