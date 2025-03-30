@@ -42,7 +42,7 @@ simplifier:
 
 grammar:
   language: others/LMDG/wanxiang-lts-zh-hans
-  collocation_max_length: 8
+  collocation_max_length: 30
   collocation_min_length: 2
 
 ascii_composer:
