@@ -64,7 +64,7 @@ engine:
     - key_binder
     - speller
     - punctuator
-    #- predictor
+    - predictor
     - selector
     - navigator
     - express_editor
@@ -90,6 +90,9 @@ engine:
     - lua_translator@force_gc
 
 is_in_user_dict: true
+
+predictor:
+  db: wanxiang-lts-zh-predict.db
 
 #emoji:
 #  opencc_config: moe-emoji.json
