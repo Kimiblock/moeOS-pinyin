@@ -41,6 +41,8 @@ vocabulary: others/rime-essay-simp/essay-zh-hans
 
 grammar:
   language: others/LMDG/wanxiang-lts-zh-hans
+  collocation_max_length: 5
+  collocation_min_length: 2
 
 ascii_composer:
   good_old_caps_lock: true
