@@ -39,8 +39,6 @@ switches:
 simplifier:
   option_name: simplification
 
-vocabulary: others/rime-essay-simp/essay-zh-hans
-
 
 grammar:
   language: others/LMDG/wanxiang-lts-zh-hans
