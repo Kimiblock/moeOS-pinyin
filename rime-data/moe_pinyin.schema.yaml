@@ -61,6 +61,7 @@ engine:
     - key_binder
     - speller
     - punctuator
+    #- predictor
     - selector
     - navigator
     - express_editor
@@ -71,6 +72,7 @@ engine:
     - punct_segmentor
     - fallback_segmentor
   translators:
+    - predict_translator
     - punct_translator
     - script_translator
     - table_translator@melt_eng

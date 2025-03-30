@@ -4,8 +4,8 @@
 ---
 name: moe_pinyin
 version: "2025-03-30"
-# sort: by_weight
-vocabulary: others/rime-essay-simp/essay-zh-hans
+sort: by_weight
+use_preset_vocabulary: false
 
 import_tables:
   - others/LMDG/cn_dicts/chars
