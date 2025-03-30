@@ -38,9 +38,11 @@ switches:
 
 vocabulary: others/rime-essay-simp/essay-zh-hans
 
-# https://github.com/SivanLaai/rime-pure/blob/master/schemes/Clover%E5%9B%9B%E5%8F%B6%E8%8D%89%E6%8B%BC%E9%9F%B3/zh-hans-t-huayu-v7-bgw.gram
+
 grammar:
-  language: zh-hans-t-huayu-v7-bgw
+  language: others/LMDG/wanxiang-lts-zh-hans
+  collocation_max_length: 5
+  collocation_min_length: 2
 
 ascii_composer:
   good_old_caps_lock: true
