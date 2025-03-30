@@ -4,10 +4,12 @@
 ---
 name: moe_pinyin
 version: "2025-03-30"
-sort: by_weight
-use_preset_vocabulary: false
+#sort: by_weight
+#use_preset_vocabulary: false
 
 import_tables:
+  - others/rime-ice/8105
+  - others/rime-ice/base
   - others/wanxiang/wanxiang
   - moe_cn
   - others/rime-minecraft-dict/minecraft_cn

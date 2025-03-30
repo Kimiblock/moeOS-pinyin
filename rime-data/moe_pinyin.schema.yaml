@@ -42,7 +42,7 @@ simplifier:
 
 grammar:
   language: others/LMDG/wanxiang-lts-zh-hans
-  collocation_max_length: 5
+  collocation_max_length: 8
   collocation_min_length: 2
 
 ascii_composer:
@@ -84,7 +84,7 @@ engine:
     #- lua_filter@pin_cand_filter
     - lua_filter@is_in_user_dict
     - simplifier
-    - lua_filter@corrector
+    #- lua_filter@corrector
     - lua_translator@force_gc
 
 is_in_user_dict: true
@@ -99,11 +99,12 @@ predictor:
 # 主翻译器，拼音
 translator:
   enable_user_dict: true
-  contextual_suggestions: true
-  enable_encoder: true
+  contextual_suggestions: false
+  #enable_encoder: true
   enable_completion: true
   enable_correction: false
-  max_homophones: 7
+  max_homophones: 5
+  max_homographs: 5
   enable_sentence: true
   dictionary: moe_pinyin
   spelling_hints: 50
@@ -186,8 +187,13 @@ speller:
   # 如果不想让什么标点直接上屏，可以加在 alphabet，或者编辑标点符号为两个及以上的映射
   alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
   initials: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
-  delimiter: " '"  # 第一位<空格>是拼音之间的分隔符；第二位<'>表示可以手动输入单引号来分割拼音。
+  delimiter: " '"
   algebra:
+    - xlit/āáǎàōóǒòēéěèīíǐìūúǔùǖǘǚǜü/aaaaooooeeeeiiiiuuuuvvvvv/
+    - xform/ń|ň|ǹ/en/
+    - xform/\bn\b/en/
+    - xform/\bng\b/eng/
+    - xform/ńg|ňg|ǹg/eng/
     ### 模糊音
     # 声母
     # - derive/^([zcs])h/$1/          # z c s → zh ch sh
