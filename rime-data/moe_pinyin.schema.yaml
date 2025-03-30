@@ -32,9 +32,12 @@ switches:
   - name: full_shape
     states: [ 半角, 全角 ]
     reset: 0
+  - name: simplification
+    states: [ Trad, Simp ]
+    reset: 1
 
-#simplifier:
-#  option_name: simplification
+simplifier:
+  option_name: simplification
 
 vocabulary: others/rime-essay-simp/essay-zh-hans
 
