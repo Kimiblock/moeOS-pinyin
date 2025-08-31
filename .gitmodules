@@ -16,6 +16,3 @@
 [submodule "rime-data/others/rime-resident-evil"]
 	path = rime-data/others/rime-resident-evil
 	url = https://github.com/Kimiblock/rime-resident-evil.git
-[submodule "rime-data/others/wanxiang"]
-	path = rime-data/others/wanxiang
-	url = https://github.com/amzxyz/rime_wanxiang_pro.git
