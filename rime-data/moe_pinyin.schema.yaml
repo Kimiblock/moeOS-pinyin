@@ -102,7 +102,7 @@ translator:
   contextual_suggestions: false
   #enable_encoder: true
   enable_completion: true
-  enable_correction: true
+  enable_correction: false
   max_homophones: 5
   max_homographs: 5
   enable_sentence: true
