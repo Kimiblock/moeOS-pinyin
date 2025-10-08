@@ -11,7 +11,7 @@ function grabSources() {
 	echo "Downloading ICE dicts..."
 	local url="https://raw.githubusercontent.com/iDvel/rime-ice"
 	mkdir -p rime-data/others/rime-ice/
-	for file in 8105 base ext others tencent; do
+	for file in 8105 base ext others tencent 41448; do
 		curl \
 			"${url}/refs/heads/main/cn_dicts/${file}.dict.yaml" \
 			--progress-bar \
