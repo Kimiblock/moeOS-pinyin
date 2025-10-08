@@ -89,9 +89,6 @@ engine:
 
 is_in_user_dict: true
 
-predictor:
-  db: others/wanxiang/wanxiang-lts-zh-predict.db
-
 #emoji:
 #  opencc_config: moe-emoji.json
 #  option_name: emoji

@@ -3,14 +3,16 @@
 
 ---
 name: moe_pinyin
-version: "2025-03-30"
+version: "2025-10-08"
 #sort: by_weight
 #use_preset_vocabulary: false
 
 import_tables:
   - others/rime-ice/8105
+  - others/rime-ice/41448
   - others/rime-ice/base
-  - others/wanxiang/wanxiang
+  - others/rime-ice/ext
+  - others/rime-ice/tencent
   - moe_cn
   - others/rime-minecraft-dict/minecraft_cn
   - others/rime-minecraft-dict/minecraft_cn_ext
