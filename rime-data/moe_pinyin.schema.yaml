@@ -107,7 +107,7 @@ translator:
   max_homographs: 5
   enable_sentence: true
   dictionary: moe_pinyin
-  spelling_hints: 50
+  #spelling_hints: 50
   always_show_comments: false
   initial_quality: 1.2
   preedit_format:                # preedit_format 影响到输入框的显示和“Shift+回车”上屏的字符
