@@ -18,7 +18,13 @@ function grabSources() {
 			-Lo \
 			"rime-data/others/rime-ice/${file}.dict.yaml"
 	done
-
+	for file in en en_ext; do
+		curl \
+			"${url}/refs/heads/main/en_dicts/${file}.dict.yaml" \
+			--progress-bar \
+			-Lo \
+			"rime-data/others/rime-ice/${file}.dict.yaml"
+	done
 }
 
 grabSources
