@@ -41,7 +41,7 @@ simplifier:
 
 
 grammar:
-  language: others/LMDG/wanxiang-lts-zh-hans
+  language: others/wanxiang
   collocation_max_length: 30
   collocation_min_length: 2
 
