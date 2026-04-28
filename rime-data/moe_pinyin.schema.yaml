@@ -9,7 +9,7 @@ schema:
   dependencies:
     - melt_eng
   name: "拼音 (moeOS)"
-  version: "4.0"
+  version: "4.1"
   author:
     - "Kimiblock"
   description: |
