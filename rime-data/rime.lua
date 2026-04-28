@@ -39,6 +39,9 @@ autocap_filter = require("autocap_filter")
 -- 降低部分英语单词在候选项的位置，可在方案中配置要降低的模式和单词
 reduce_english_filter = require("reduce_english_filter")
 
+-- 辅码，https://github.com/mirtlecn/rime-radical-pinyin/blob/master/search.lua.md
+search = require("search")
+
 -- 置顶候选项
 pin_cand_filter = require("pin_cand_filter")
 
