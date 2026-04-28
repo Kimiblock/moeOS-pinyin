@@ -6,14 +6,6 @@ schema_list:
 
 config_version: '0.40'
 
-switcher:
-  caption: 〔方案選單〕
-  hotkeys:
-    - F4
-  fold_options: true
-  abbreviate_options: true
-  option_list_separator: '／'
-
 menu:
   page_size: 5
 
