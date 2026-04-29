@@ -114,15 +114,6 @@ translator:
     - xform/([nl])v/$1v/         # 显示为 nv lv
     - xform/([nl])ue/$1ve/       # 显示为 nve lve
 
-melt_eng:
-  enable_correction: true
-  enable_completion: true
-  enable_sentence: false
-  dictionary: melt_eng
-  initial_quality: 1.1
-  comment_format:
-    - xform/.*//
-
 
 punctuator:
   half_shape:
