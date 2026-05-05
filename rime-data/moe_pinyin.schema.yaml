@@ -6,8 +6,6 @@
 # 方案说明
 schema:
   schema_id: moe_pinyin
-  dependencies:
-    - melt_eng
   name: "拼音 (moeOS)"
   version: "4.1"
   author:
@@ -76,7 +74,6 @@ engine:
     - predict_translator
     - punct_translator
     - script_translator
-    - table_translator@melt_eng
   filters:
     #- lua_filter@limit_mulchar
     - uniquifier

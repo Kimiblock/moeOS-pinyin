@@ -16,7 +16,6 @@ import_tables:
   - moe_cn
   - others/rime-minecraft-dict/minecraft_cn
   - others/rime-minecraft-dict/minecraft_cn_ext
-  - melt_mult_language
   - moegirl
   - zhwiki
   - others/trans/project_trans
