@@ -60,7 +60,6 @@ engine:
     - key_binder
     - speller
     - punctuator
-    - predictor
     - selector
     - navigator
     - express_editor
@@ -71,16 +70,14 @@ engine:
     - punct_segmentor
     - fallback_segmentor
   translators:
-    - predict_translator
     - punct_translator
     - script_translator
   filters:
     #- lua_filter@limit_mulchar
     - uniquifier
-    - lua_filter@autocap_filter
-    #- lua_filter@pin_cand_filter
+    - lua_filter@long_word_filter
     - lua_filter@is_in_user_dict
-    - simplifier
+    #- simplifier
     #- lua_filter@corrector
     - lua_translator@force_gc
 
